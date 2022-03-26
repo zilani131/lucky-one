@@ -1,5 +1,7 @@
 .componentGrid{
     margin-top:50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
     display: grid;
     grid-template-columns: 5fr 1fr;
     

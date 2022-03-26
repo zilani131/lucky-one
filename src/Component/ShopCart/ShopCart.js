@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import RandomCard from '../RandomCard/RandomCard';
 import './ShopCart.css'
 const ShopCart = (props) => {
@@ -22,7 +22,7 @@ const ShopCart = (props) => {
             </div>
 
             <RandomCard cart={cart}></RandomCard>
-           <button className='btn btn-outline-success' onClick={()=>{RemoveAll()}} >Remove all</button>
+           <button className='btn btn-outline-success' onClick={()=>{RemoveAll()}} >Select Again</button>
         </div>
     );
 };
