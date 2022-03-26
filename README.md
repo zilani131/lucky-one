@@ -1,6 +1,9 @@
-# Project name lucky one
+# Project name lucky one 
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+live site : [https://gleeful-smakager-488003.netlify.app/]
 
 ## Available Scripts
 
