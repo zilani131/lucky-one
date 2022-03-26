@@ -1,15 +1,17 @@
-import React from 'react';
+
 import './CardGallery.css'
 const CardGallery = (props) => {
-   const {name,price,img}=props.fruit;
-   console.log(props.fruit)
+   const {fruit,HandleClicked}=props
+ 
+   const {name,price,img}=fruit;
+  //  console.log(props.fruit)
     return (
-     <div class="card cardStyle" style={{width:"18rem"}}>
-       <img src={img} class="card-img-top" alt="..."/>
-       <div class="card-body">
-           <h2 class="card-title">{name}</h2>
-           <h5 class="card-text">Price:${price}</h5>
-           <button className='buttonCard'>Add to Cart</button>
+     <div className="card cardStyle" style={{width:"18rem"}}>
+       <img src={img} className="card-img-top" alt="..."/>
+       <div className="card-body">
+           <h2 className="card-title card-content">{name}</h2>
+           <h5 className="card-text card-content">Price:${price}</h5>
+           <button onClick={()=>{HandleClicked(fruit)}} className='buttonCard'>Add to Cart</button>
        </div>
      </div>
     );
