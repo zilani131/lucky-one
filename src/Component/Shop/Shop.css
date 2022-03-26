@@ -1,4 +1,5 @@
 .componentGrid{
+    margin-top:50px;
     display: grid;
     grid-template-columns: 5fr 1fr;
     
@@ -12,15 +13,11 @@
 }
 @media screen and (max-width:720px) {
     .componentGrid{
-      display: flex;
-      flex-direction: column;
+     grid-template-columns: 3fr 1fr;
     }
     .cardGrid{
         grid-template-columns: repeat(1,1fr);
         z-index: 0;
     }
 
-    .shopcart{
-        z-index: 1;
-    }
 }

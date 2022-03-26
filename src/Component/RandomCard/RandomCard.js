@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
 const RandomCard = (props) => {
-  const [z,setZ]=useState([''])
+  const [z,setZ]=useState([{}])
     const {cart}=props;
    const num=cart.length;
    let random;
 //    const random =Math.floor(Math.random()*num)
    const chose=()=>{
     random =Math.floor(Math.random()*num)
-    setZ(cart[random].name)
+    setZ(cart[random])
    }
    console.log(z)
 //    setZ([cart[random]])
@@ -16,9 +16,11 @@ const RandomCard = (props) => {
     
     
     return (
-        <div>
-            <button onClick={()=>chose()}>choose</button>
-            <h1>name:{z}</h1>
+        <div style={{marginBottom:'10px'}}>
+           
+            <div><img style={{width:'50%'}} src={z.img} alt="" /></div>
+            <h4>{z.name}</h4>
+            <button className='btn  btn-outline-success' onClick={()=>chose()}>Select 1</button>
         </div>
     );
 };

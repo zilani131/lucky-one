@@ -2,6 +2,8 @@
 .cardStyle{
     
     background-color: rgba(58, 224, 43, 0.281);
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.329);
     position: relative;
 }
 .card-content{
@@ -15,4 +17,9 @@
     height: 40px;
     background-color: green;
     color: black;
+    border: 0px;
+}
+.card-background{
+margin-left: 10px;
+margin-right: 10px;
 }

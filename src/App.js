@@ -5,7 +5,7 @@ import Shop from './Component/Shop/Shop';
 function App() {
   return (
     <div className="App">
-      <h2>Fruit Bazar</h2>
+      <h1 style={{paddingTop:'30px'}}>Fruit Bazar</h1>
       <Shop></Shop>
     
     </div>
